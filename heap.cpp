@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <queue>
+#include <algorithm>
+
 using namespace std;
 #define MAX_SIZE 100
 
@@ -145,8 +147,21 @@ int maxHeapPop(int *value)
 }
 
 // using priority queue STL
-priority_queue<int> minHip;
-priority_queue<int> maxHip;
+priority_queue<int> pqMax;
+priority_queue<int> pqMin;
+
+void pqInit()
+{
+	priority_queue<int> empty;
+	std::swap(pqMax, empty); // clear qu to empty
+	std::swap(pqMin, empty);
+	/* or 
+	while (!pqMax.empty())
+	{
+		pqMax.pop();
+	}
+	*/
+}
 
 int main()
 {
@@ -159,6 +174,7 @@ int main()
 		scanf("%d", &N);
 
 		heapInit();
+		pqInit();
 
 		for (int i = 0; i < N; i++)
 		{
@@ -166,6 +182,9 @@ int main()
 			scanf("%d", &value);
 			minHeapPush(value);
 			maxHeapPush(value);
+
+			pqMin.push(-value);
+			pqMax.push(value);
 		}
 
 		printf("#%d\n", test_case);
@@ -173,7 +192,9 @@ int main()
 		for (int i = 0; i < N; i++)
 		{
 			int value;
-			minHeapPop(&value);
+			//minHeapPop(&value);
+			value = -(pqMin.top());
+			pqMin.pop();
 			printf("%d ", value);
 		}
 		printf("\n");
@@ -181,7 +202,9 @@ int main()
 		for (int i = 0; i < N; i++)
 		{
  			int value2;
-			maxHeapPop(&value2);
+			//maxHeapPop(&value2);
+			value2 = pqMax.top();
+			pqMax.pop();
 			printf("%d ", value2);
 		}
 		printf("\n");

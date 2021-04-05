@@ -1,9 +1,9 @@
 ﻿  heap.cpp
-d:\work\algorithm\heap.cpp(155): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\work\algorithm\heap.cpp(170): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
-d:\work\algorithm\heap.cpp(159): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\work\algorithm\heap.cpp(174): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
-d:\work\algorithm\heap.cpp(166): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\work\algorithm\heap.cpp(182): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
   Heap.vcxproj -> D:\Work\Algorithm\Debug\Heap.exe
   Heap.vcxproj -> D:\Work\Algorithm\Debug\Heap.pdb (Partial PDB)
